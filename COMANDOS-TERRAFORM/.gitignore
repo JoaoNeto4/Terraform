@@ -1,0 +1,10 @@
+.terraform/
+*.backup
+*.hcl
+*.tfvars
+*.tfstate
+*.out
+*.info
+.terraform.lock.hcl
+azure-key*
+
