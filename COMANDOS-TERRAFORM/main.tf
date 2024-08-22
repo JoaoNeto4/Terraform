@@ -22,6 +22,15 @@ terraform {
     key    = "commands/terraform.tfstate"
     region = "us-west-2"
   }
+  /*
+  saves an Azure backend that will save the state of a code that is being deployed to AWS
+  backend "azure" {
+    resource_group_name = "rg-remote-state"
+    storage_account_name    = "joaonetoterraformstate"
+    container_name = "remote-state"
+    key = "comandos/terraform.tfstate"
+  }
+  */
 }
 
 provider "aws" {
